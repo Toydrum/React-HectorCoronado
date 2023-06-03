@@ -24,9 +24,7 @@ const NavBar =() => {
     <nav>
       <ul style={styles.NavBar}>
         <ShoppingCartIcon/>
-        <ItemListContainer 
-          numero={{ contador: "8"}}  
-        />
+        <ItemListContainer />
         <li><a className="link" href="https://www.google.com.mx/?hl=es">Inicio</a></li>
         <li><a className="link" href="https://www.google.com.mx/?hl=es">About</a></li>
         <li><a className="link" href="https://www.google.com.mx/?hl=es">Contacto</a></li>

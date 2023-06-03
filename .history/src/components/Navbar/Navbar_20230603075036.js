@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import ItemListContainer from '../Contenedor/ItemListContainer';
 const styles = {
   NavBar: {
     display: "flex",
@@ -24,9 +23,6 @@ const NavBar =() => {
     <nav>
       <ul style={styles.NavBar}>
         <ShoppingCartIcon/>
-        <ItemListContainer 
-          numero={{ contador: "8"}}  
-        />
         <li><a className="link" href="https://www.google.com.mx/?hl=es">Inicio</a></li>
         <li><a className="link" href="https://www.google.com.mx/?hl=es">About</a></li>
         <li><a className="link" href="https://www.google.com.mx/?hl=es">Contacto</a></li>
