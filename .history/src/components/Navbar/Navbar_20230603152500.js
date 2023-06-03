@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import ItemListContainer from '../Contenedor/ItemListContainer';
-import CartWidget from '../CartWidged/CartWidget'
+import CartWidget from "/src/components/CartWidged/CartWidget"
 const styles = {
   NavBar: {
     display: "flex",
@@ -23,7 +23,7 @@ const NavBar =() => {
     <>
     <nav>
       <ul style={styles.NavBar}>
-        <CartWidget />
+        <CartWidget/>
         <ItemListContainer 
           contador= "8"  
         />
