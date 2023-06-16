@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*align-items: center;*/
 }
 
 .Cards-Container{
   display: flex;
   width: 100%;
   justify-content: center;
+
 }
