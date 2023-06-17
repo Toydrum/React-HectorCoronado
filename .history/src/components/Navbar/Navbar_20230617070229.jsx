@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="nav-container">
       <ul className="nav-ul">
-        <img src={logo} alt="gatito" style={{ height: 50, width: 50 }} />
+        <img src={logo} alt="gatito" style={{ height: 10 }} />
         <Link className="li" to="/">
           Home
         </Link>

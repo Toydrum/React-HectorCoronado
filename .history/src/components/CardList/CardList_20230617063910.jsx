@@ -17,11 +17,9 @@ const CardList = () => {
     <div className="Cards-List">
       {users.map((user) => {
         return (
-          <Link to={`detail/${user.id}`}>
-            <div key={user.id}>
-              <CardUser data={user} />
-            </div>
-          </Link>
+          <div key={user.id}>
+            <CardUser data={user} />
+          </div>
         );
       })}
     </div>

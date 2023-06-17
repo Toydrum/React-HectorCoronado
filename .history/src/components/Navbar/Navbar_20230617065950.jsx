@@ -1,14 +1,15 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "./cat-logo.svg";
+import "./cat-logo.svg";
 
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const logo = "./cat-logo.svg";
   return (
     <nav className="nav-container">
       <ul className="nav-ul">
-        <img src={logo} alt="gatito" style={{ height: 50, width: 50 }} />
+        <img src={logo} alt="gatito" />
         <Link className="li" to="/">
           Home
         </Link>

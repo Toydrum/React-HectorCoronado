@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/About" element={<AboutPage />}></Route>
           <Route path="/Contact" element={<ContactPage />}></Route>
-          <Route path="/detail/:id" element={<DetailPage />}></Route>
+          <Route path="/DetailPage" element={<DetailPage />}></Route>
         </Routes>
         <div className="Cards-Container"></div>
       </div>
