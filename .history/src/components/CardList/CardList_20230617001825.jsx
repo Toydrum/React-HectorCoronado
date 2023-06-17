@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CardUser from "../CardUser/CardUser";
 import "./CardList.css";
 
-console.log(process.env);
 const CardList = () => {
   const [users, setUsers] = useState([]);
 

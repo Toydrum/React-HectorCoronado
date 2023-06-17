@@ -14,12 +14,9 @@ const CardUser = ({ data }) => {
           <Typography gutterBottom variant="h4" component="div">
             {data.name}
           </Typography>
-          <Typography style={{ margin: 13, fontSize: 20 }}>
-            ${data.precio}
-          </Typography>
-          <button type="button" style={{ padding: 7 }}>
+          <button>
             <Typography variant="body2" color="text.secondary">
-              Adoptar
+              Adopción: ${data.precio}
             </Typography>
           </button>
         </CardContent>

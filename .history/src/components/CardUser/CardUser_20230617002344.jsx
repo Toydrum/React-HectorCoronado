@@ -7,21 +7,14 @@ import { CardActionArea } from "@mui/material";
 
 const CardUser = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: 3 }}>
+    <Card sx={{ maxWidth: 345, margin: 4 }}>
       <CardActionArea>
         <CardMedia component="img" height="140" image={data.img} alt="" />
         <CardContent>
-          <Typography gutterBottom variant="h4" component="div">
-            {data.name}
+          <Typography gutterBottom variant="h5" component="div"></Typography>
+          <Typography variant="body2" color="text.secondary">
+            Perro:{data.name} {data.precio}
           </Typography>
-          <Typography style={{ margin: 13, fontSize: 20 }}>
-            ${data.precio}
-          </Typography>
-          <button type="button" style={{ padding: 7 }}>
-            <Typography variant="body2" color="text.secondary">
-              Adoptar
-            </Typography>
-          </button>
         </CardContent>
       </CardActionArea>
     </Card>

@@ -11,17 +11,11 @@ const CardUser = ({ data }) => {
       <CardActionArea>
         <CardMedia component="img" height="140" image={data.img} alt="" />
         <CardContent>
-          <Typography gutterBottom variant="h4" component="div">
-            {data.name}
+          <Typography gutterBottom variant="h5" component="div"></Typography>
+          <Typography variant="body2" color="text.secondary">
+            <h2>{data.name}</h2>
+            <h4>Precio de adopción: ${data.precio}</h4>
           </Typography>
-          <Typography style={{ margin: 13, fontSize: 20 }}>
-            ${data.precio}
-          </Typography>
-          <button type="button" style={{ padding: 7 }}>
-            <Typography variant="body2" color="text.secondary">
-              Adoptar
-            </Typography>
-          </button>
         </CardContent>
       </CardActionArea>
     </Card>

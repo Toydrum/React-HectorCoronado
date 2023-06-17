@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CardUser from "../CardUser/CardUser";
 import "./CardList.css";
+//import axios from 'axios';
 
-console.log(process.env);
 const CardList = () => {
   const [users, setUsers] = useState([]);
 

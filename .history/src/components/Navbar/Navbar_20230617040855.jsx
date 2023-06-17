@@ -39,7 +39,7 @@ const NavBar = () => {
             </a>
           </li>
           <CartWidget />
-          <ItemListContainer contador={0} />
+          <ItemListContainer contador={8} />
         </ul>
       </nav>
     </>

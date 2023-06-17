@@ -22,6 +22,7 @@ const NavBar = () => {
     <>
       <nav>
         <ul style={styles.NavBar}>
+          <ItemListContainer contador="8" />
           <img src={logo} className="catLogo" alt="gatito" />
           <li>
             <a className="link" href="https://www.google.com.mx/?hl=es">
@@ -39,7 +40,6 @@ const NavBar = () => {
             </a>
           </li>
           <CartWidget />
-          <ItemListContainer contador={0} />
         </ul>
       </nav>
     </>

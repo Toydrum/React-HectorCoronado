@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import ItemListContainer from "../Contenedor/ItemListContainer";
 import CartWidget from "../CartWidged/CartWidget";
-import logo from "./cat-logo.svg";
+import logo from "https://images.app.goo.gl/aw1au5LxFTWUFGe97";
 const styles = {
   NavBar: {
     display: "flex",
@@ -10,10 +10,10 @@ const styles = {
     alignItems: "center",
     listStyleType: "none",
     fontFamily: "sans-serif",
-    backgroundColor: "#FFAF33",
+    backgroundColor: "blue",
     margin: 0,
     padding: 0,
-    height: 80,
+    height: 60,
   },
 };
 
@@ -21,8 +21,10 @@ const NavBar = () => {
   return (
     <>
       <nav>
+        <img src="https://images.app.goo.gl/aw1au5LxFTWUFGe97" />
         <ul style={styles.NavBar}>
-          <img src={logo} className="catLogo" alt="gatito" />
+          <CartWidget />
+          <ItemListContainer contador="8" />
           <li>
             <a className="link" href="https://www.google.com.mx/?hl=es">
               Inicio
@@ -38,8 +40,6 @@ const NavBar = () => {
               Contacto
             </a>
           </li>
-          <CartWidget />
-          <ItemListContainer contador={0} />
         </ul>
       </nav>
     </>
