@@ -4,21 +4,21 @@ import "./CardList.css";
 import { Link } from "react-router-dom";
 
 const CardList = () => {
-  const [prod, setProd] = useState([]);
-  console.log(prod);
+  const [users, setUsers] = useState([]);
+
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
-      .then((data) => setProd(data));
+      .then((data) => setUsers(data));
   }, []);
 
   return (
     <div className="Cards-List">
-      {prod.map((prod) => {
+      {users.map((user) => {
         return (
-          <Link key={prod.id} to={`detail/${prod.id}`}>
-            <div>
-              <CardUser data={prod} />
+          <Link to={`detail/${user.id}`}>
+            <div key={user.id}>
+              <CardUser data={user} />
             </div>
           </Link>
         );

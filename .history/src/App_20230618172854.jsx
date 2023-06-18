@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //Components
 import NavBar from "./components/Navbar/Navbar";
-import CartWidged from "./components/CartWidged/CartWidget";
+
 //Pages
 import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
@@ -19,7 +19,6 @@ function App() {
           <Route path="/About" element={<AboutPage />}></Route>
           <Route path="/Contact" element={<ContactPage />}></Route>
           <Route path="/detail/:id" element={<DetailPage />}></Route>
-          <Route path="/cart" element={<CartWidged />}></Route>
         </Routes>
         <div className="Cards-Container"></div>
       </div>

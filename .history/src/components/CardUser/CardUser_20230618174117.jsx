@@ -17,9 +17,9 @@ const CardUser = ({ data }) => {
           <Typography style={{ margin: 13, fontSize: 20 }}>
             ${data.precio}
           </Typography>
-          {/*  <button type="button" style={{ padding: 7 }}>
+          <button type="button" style={{ padding: 7 }}>
             <Typography color="text.secondary">Adoptar</Typography>
-          </button> */}
+          </button>
         </CardContent>
       </CardActionArea>
     </Card>

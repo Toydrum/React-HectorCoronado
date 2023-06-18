@@ -16,8 +16,8 @@ const CardList = () => {
     <div className="Cards-List">
       {prod.map((prod) => {
         return (
-          <Link key={prod.id} to={`detail/${prod.id}`}>
-            <div>
+          <Link to={`detail/${prod.id}`}>
+            <div key={prod.id}>
               <CardUser data={prod} />
             </div>
           </Link>

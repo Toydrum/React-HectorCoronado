@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const CardList = () => {
   const [prod, setProd] = useState([]);
-  console.log(prod);
+
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
@@ -16,8 +16,8 @@ const CardList = () => {
     <div className="Cards-List">
       {prod.map((prod) => {
         return (
-          <Link key={prod.id} to={`detail/${prod.id}`}>
-            <div>
+          <Link to={`detail/${prod.id}`}>
+            <div key={prod.id}>
               <CardUser data={prod} />
             </div>
           </Link>

@@ -10,19 +10,13 @@ const NavBar = () => {
       <ul className="nav-ul">
         <img src={logo} alt="gatito" style={{ height: 50, width: 50 }} />
         <li className="li">
-          <Link to="/" className="li">
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="li">
-          <Link to="/about" className="li">
-            About
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li className="li">
-          <Link to="/contact" className="li">
-            Contact
-          </Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li className="li">
           <Link to="/cart" className="li"></Link>

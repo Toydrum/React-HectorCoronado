@@ -14,18 +14,20 @@ const NavBar = () => {
             Home
           </Link>
         </li>
-        <li className="li">
+        <li>
           <Link to="/about" className="li">
             About
           </Link>
         </li>
-        <li className="li">
+        <li>
           <Link to="/contact" className="li">
             Contact
           </Link>
         </li>
-        <li className="li">
-          <Link to="/cart" className="li"></Link>
+        <li>
+          <Link to="/cart" className="li">
+            Cart
+          </Link>
           <CartWidget />
         </li>
       </ul>
