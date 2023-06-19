@@ -31,7 +31,7 @@ const DetailPage = () => {
             display: "block",
             justifyContent: "center",
             margin: 100,
-            fontSize: 30,
+            fontSize: 50,
           }}
         >
           {prod.description}
