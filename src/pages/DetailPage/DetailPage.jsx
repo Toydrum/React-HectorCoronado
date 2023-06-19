@@ -30,8 +30,8 @@ const DetailPage = () => {
           style={{
             display: "block",
             justifyContent: "center",
-            margin: 100,
-            fontSize: 30,
+            marginInline: 280,
+            fontSize: 20,
           }}
         >
           {prod.description}
