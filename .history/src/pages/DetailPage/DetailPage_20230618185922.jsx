@@ -26,7 +26,7 @@ const DetailPage = () => {
           display: "block",
         }}
       >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
+        <p style={{ display: "block", justifyContent: "center", margin: 40, 60 }}>
           {prod.description}
         </p>
       </div>

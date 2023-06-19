@@ -21,14 +21,8 @@ const DetailPage = () => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         {prod.id ? <CardUser data={prod} /> : null}
       </div>
-      <div
-        style={{
-          display: "block",
-        }}
-      >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
-          {prod.description}
-        </p>
+      <div style={{ display: "flex", maxWidth: 500, alignItems: "center" }}>
+        {prod.description}
       </div>
     </div>
   );

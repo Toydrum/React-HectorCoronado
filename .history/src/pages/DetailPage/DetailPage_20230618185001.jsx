@@ -23,12 +23,13 @@ const DetailPage = () => {
       </div>
       <div
         style={{
-          display: "block",
+          display: "grid",
+          maxWidth: 500,
+          textAlign: "center",
+          justifyContent: "spaceAround",
         }}
       >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
-          {prod.description}
-        </p>
+        {prod.description}
       </div>
     </div>
   );

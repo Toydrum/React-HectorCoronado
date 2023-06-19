@@ -1,34 +1,26 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import CardUser from "../../components/CardUser/CardUser";
 
 const DetailPage = () => {
-  const [prod, setProd] = useState({});
+  const [gato, setGato] = useState({});
 
   let { id } = useParams();
 
-  console.log(prod);
+  console.log(gato);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/ ${id}`)
-      .then((response) => response.json())
-      .then((data) => setProd(data));
+    axios(`'https://fakestoreapi.com/products'${id}`).then((json) =>
+      setGato(json.data)
+    );
   }, [id]);
 
   return (
     <div>
       <h1 style={{ display: "flex", justifyContent: "center" }}>DetailPage</h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        {prod.id ? <CardUser data={prod} /> : null}
-      </div>
-      <div
-        style={{
-          display: "block",
-        }}
-      >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
-          {prod.description}
-        </p>
+        {gato.id ? <CardUser data={gato} /> : null}
       </div>
     </div>
   );

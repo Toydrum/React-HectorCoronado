@@ -11,7 +11,7 @@ const CardUser = ({ data }) => {
       <CardActionArea>
         <CardMedia component="img" height="140" image={data.image} alt="" />
         <CardContent>
-          <Typography gutterBottom variant="h7" component="div">
+          <Typography gutterBottom variant="h3" component="div">
             {data.title}
           </Typography>
           <Typography style={{ margin: 13, fontSize: 20 }}>

@@ -24,9 +24,10 @@ const DetailPage = () => {
       <div
         style={{
           display: "block",
+          maxWidth: 500,
         }}
       >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
+        <p style={{ display: "flex", justifyContent: "center" }}>
           {prod.description}
         </p>
       </div>

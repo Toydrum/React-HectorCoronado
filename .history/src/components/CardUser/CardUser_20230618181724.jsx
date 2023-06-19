@@ -7,7 +7,7 @@ import { CardActionArea } from "@mui/material";
 
 const CardUser = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 250, margin: 2, maxHeight: 250, padding: 5 }}>
+    <Card sx={{ maxWidth: 250, margin: 3, maxHeight: 250 }}>
       <CardActionArea>
         <CardMedia component="img" height="140" image={data.image} alt="" />
         <CardContent>

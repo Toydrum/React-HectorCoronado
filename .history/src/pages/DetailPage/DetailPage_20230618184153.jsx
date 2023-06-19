@@ -18,17 +18,8 @@ const DetailPage = () => {
   return (
     <div>
       <h1 style={{ display: "flex", justifyContent: "center" }}>DetailPage</h1>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", width: 1200 }}>
         {prod.id ? <CardUser data={prod} /> : null}
-      </div>
-      <div
-        style={{
-          display: "block",
-        }}
-      >
-        <p style={{ display: "block", justifyContent: "center", margin: 100 }}>
-          {prod.description}
-        </p>
       </div>
     </div>
   );
