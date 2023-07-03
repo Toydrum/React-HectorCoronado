@@ -11,6 +11,7 @@ const CardList = () => {
       .then((response) => response.json())
       .then((data) => setProd(data));
   }, []);
+  console.log(prod);
 
   return (
     <div className="Cards-List">
