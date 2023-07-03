@@ -1,6 +1,0 @@
-.Cards-List{
-  display: grid;
-  justify-content: space-around;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
